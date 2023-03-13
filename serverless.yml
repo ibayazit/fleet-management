@@ -1,0 +1,17 @@
+service: fleet-management
+frameworkVersion: '3'
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  environment:
+    APP_NAME: ${env:APP_NAME}
+    DATABASE_CONNECTION_URI: ${env:DATABASE_CONNECTION_URI}
+    JWT_SECRET: ${env:JWT_SECRET}
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi: '*'

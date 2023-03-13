@@ -1,0 +1,637 @@
+{
+	"info": {
+		"_postman_id": "60220b0a-21c4-4b60-8fb1-3e15b5b6efba",
+		"name": "Fleet Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Companies Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/companies",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Company Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/companies/640ca7d43d2f07c171eb87d9",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"companies",
+								"640ca7d43d2f07c171eb87d9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Company Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Bluedot",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/companies",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Company Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Bluedot updated",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/companies/640f89dc18a98b1834b56b12",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"companies",
+								"640f89dc18a98b1834b56b12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Company Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/companies/640ca7d43d2f07c171eb87d4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"companies",
+								"640ca7d43d2f07c171eb87d4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "Organizations Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/organizations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"organizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organization Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/organizations/640d9c3b4699359cff76313f",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"organizations",
+								"640d9c3b4699359cff76313f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organization Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company_id",
+									"value": "640f89dc18a98b1834b56b12",
+									"type": "default"
+								},
+								{
+									"key": "title",
+									"value": "Blue Organization 1",
+									"type": "default"
+								},
+								{
+									"key": "battery",
+									"value": "1000",
+									"type": "default"
+								},
+								{
+									"key": "charging_fee",
+									"value": "0.5",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/organizations",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"organizations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organization Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "company_id",
+									"value": "640f89dc18a98b1834b56b12",
+									"type": "default"
+								},
+								{
+									"key": "title",
+									"value": "Blue Organization 1 Updated",
+									"type": "default"
+								},
+								{
+									"key": "battery",
+									"value": "1000",
+									"type": "default"
+								},
+								{
+									"key": "charging_fee",
+									"value": "0.5",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/organizations/640f8a1318a98b1834b56b16",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"organizations",
+								"640f8a1318a98b1834b56b16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Organization Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/organizations/640d9c3b4699359cff763131",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"organizations",
+								"640d9c3b4699359cff763131"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Users Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/640dbd59fcc751d0aca08a7e",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"640dbd59fcc751d0aca08a7e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "organization_id",
+									"value": "640f8a1318a98b1834b56b16",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "ibrahim",
+									"type": "default"
+								},
+								{
+									"key": "surname",
+									"value": "bayazit",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "ibrbayazit@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "default"
+								},
+								{
+									"key": "credit",
+									"value": "100",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "organization_id",
+									"value": "640f8a1318a98b1834b56b16",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "ibrahim",
+									"type": "default"
+								},
+								{
+									"key": "surname",
+									"value": "bayazit updated",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "ibrbayazit@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "default"
+								},
+								{
+									"key": "credit",
+									"value": "100",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/users/640f8a3d18a98b1834b56b1d",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"640f8a3d18a98b1834b56b1d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/users/640dbd2dfcc751d0aca08a75",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"640dbd2dfcc751d0aca08a75"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client Routes",
+			"item": [
+				{
+					"name": "Auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "ibrbayazit@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/auth",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Auth User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBkYmQ1OWZjYzc1MWQwYWNhMDhhN2UiLCJvcmdhbml6YXRpb25faWQiOiI2NDBkYTA3NWI4NWM3OThmNWI5OTBkMGQiLCJuYW1lIjoiaWJyYWhpbSIsInN1cm5hbWUiOiJiYXlheml0IHVwIiwiZW1haWwiOiJpYnJiYXlheml0QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHN1YWhveGhRNmVZMy5hd2dYaW5vcU9WUWExLkZPZU03VTR4OGhadmlDZ1N1bnUxd056VGRhIiwiY3JlZGl0IjoxMDAsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTJUMTE6NTQ6MDEuMjk2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTJUMTQ6MjU6MTQuNzQ0WiIsIl9fdiI6MCwiaWF0IjoxNjc4NzM0NjY2LCJleHAiOjE2Nzg3MzY0NjZ9.SJA35_GwbK4YRU3cZAsoTTyJebZn5unQ85tUCtYskvA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{URL}}/auth",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Charge Session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBkYmQ1OWZjYzc1MWQwYWNhMDhhN2UiLCJvcmdhbml6YXRpb25faWQiOiI2NDBkYTA3NWI4NWM3OThmNWI5OTBkMGQiLCJuYW1lIjoiaWJyYWhpbSIsInN1cm5hbWUiOiJiYXlheml0IHVwIiwiZW1haWwiOiJpYnJiYXlheml0QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHN1YWhveGhRNmVZMy5hd2dYaW5vcU9WUWExLkZPZU03VTR4OGhadmlDZ1N1bnUxd056VGRhIiwiY3JlZGl0IjoxMDAsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTJUMTE6NTQ6MDEuMjk2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTJUMTQ6MjU6MTQuNzQ0WiIsIl9fdiI6MCwiaWF0IjoxNjc4NzMwMjYwLCJleHAiOjE2Nzg3MzIwNjB9.8YtDx_vTtxwNXRwGhJl3daLlgXyP2mNdlfCjw9OLwAk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "battery_level",
+									"value": "10",
+									"type": "default"
+								},
+								{
+									"key": "status",
+									"value": "waiting",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/charge-session",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"charge-session"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Active Charge Session",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBkYmQ1OWZjYzc1MWQwYWNhMDhhN2UiLCJvcmdhbml6YXRpb25faWQiOiI2NDBkYTA3NWI4NWM3OThmNWI5OTBkMGQiLCJuYW1lIjoiaWJyYWhpbSIsInN1cm5hbWUiOiJiYXlheml0IHVwIiwiZW1haWwiOiJpYnJiYXlheml0QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHN1YWhveGhRNmVZMy5hd2dYaW5vcU9WUWExLkZPZU03VTR4OGhadmlDZ1N1bnUxd056VGRhIiwiY3JlZGl0IjoxMDAsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTJUMTE6NTQ6MDEuMjk2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTJUMTQ6MjU6MTQuNzQ0WiIsIl9fdiI6MCwiaWF0IjoxNjc4NzM0NjY2LCJleHAiOjE2Nzg3MzY0NjZ9.SJA35_GwbK4YRU3cZAsoTTyJebZn5unQ85tUCtYskvA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{URL}}/charge-session",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"charge-session"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Done Charge Session",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBkYmQ1OWZjYzc1MWQwYWNhMDhhN2UiLCJvcmdhbml6YXRpb25faWQiOiI2NDBkYTA3NWI4NWM3OThmNWI5OTBkMGQiLCJuYW1lIjoiaWJyYWhpbSIsInN1cm5hbWUiOiJiYXlheml0IHVwIiwiZW1haWwiOiJpYnJiYXlheml0QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJHN1YWhveGhRNmVZMy5hd2dYaW5vcU9WUWExLkZPZU03VTR4OGhadmlDZ1N1bnUxd056VGRhIiwiY3JlZGl0IjoxMDAsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMTJUMTE6NTQ6MDEuMjk2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMTJUMTQ6MjU6MTQuNzQ0WiIsIl9fdiI6MCwiaWF0IjoxNjc4NzM0NjY2LCJleHAiOjE2Nzg3MzY0NjZ9.SJA35_GwbK4YRU3cZAsoTTyJebZn5unQ85tUCtYskvA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{URL}}/charge-session/done",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"charge-session",
+								"done"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000/api/v1",
+			"type": "default"
+		}
+	]
+}
